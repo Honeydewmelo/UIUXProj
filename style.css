@@ -1,18 +1,35 @@
-﻿body
-{
-    
+body {
 }
-#weapBlock{
-    background-color:darkslategray;
-    width:400px;
-    height:250px;
 
+#weapBlock {
+    background-color: rgb(19, 31, 85);
+    width: 400px;
+    height: 250px;
+    display: grid;
+    overflow: auto;
+    grid-template-columns: 0fr 1fr;
+    grid-template-rows: 164px;
+    gap: 0px;
 }
-#dmgTotal{
-    width:175px;
+
+#statTotals {
+    position: absolute;
+    display: flex;
+    width: 175px;
+    background-color: rgb(62, 61, 38);
+    margin-inline: 5px;
+    min-height: 10px;
 }
-.statdivs{
-    float:none;
-    position:relative;
-    height:10px;
+
+#statblock {
+    float: left;
+    display: flex;
+    position: absolute;
+}
+
+.statdivs {
+    display: block;
+    float: left;
+    position: absolute;
+    height: 10px;
 }
