@@ -1,7 +1,26 @@
 body {
 }
 
+#headerBar {
+    background-color: aqua;
+    width: 100%;
+    height: 150px;
+}
+
+#sideBar{
+    background-color:aqua;
+    float:left;
+    width:150px;
+    height:850px;
+    margin-right:15px;
+}
+
+#main{
+    margin:15px;
+}
+
 #weapBlock {
+    padding:15px;
     background-color: rgb(19, 31, 85);
     width: 400px;
     height: 250px;
@@ -9,7 +28,6 @@ body {
     overflow: auto;
     grid-template-columns: 0fr 1fr;
     grid-template-rows: 164px;
-    gap: 0px;
 }
 
 #statTotals {
