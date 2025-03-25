@@ -34,7 +34,7 @@ fetch('./AllWeap.json')
             const fireRate = weapons.querySelector("[data-fireRate]");
             const fireRateDiv = weapons.querySelector("[data-fireRateDiv]");
 
-            const magSize = weapons.querySelector("[data-magSize]");
+            const magSize = weapons.querySelector("[data-MagSize]");
             const magSizeDiv = weapons.querySelector("[data-magSizeDiv]");
 
             icon.src = weapon.Icon;
