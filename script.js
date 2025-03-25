@@ -67,8 +67,8 @@ fetch('./AllWeap.json')
             fireRate.innerText = weapon.FireRate;
             fireRateDiv.style.width = (weapon.FireRate / weapon.HighestCatFireRate) + "%";
 
-            magSize.innerText = weapon.MagSize;
-            magSizeDiv.style.width = (weapon.MagSize / weapon.HighestCatMagSize) + "%";
+            magSize.innerText = weapon.MagazineSize;
+            magSizeDiv.style.width = (weapon.MagazineSize / weapon.HighestCatMagazineSize) + "%";
 
             dataContainer.append(weapons);
         })
