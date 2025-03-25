@@ -1,0 +1,36 @@
+[
+  {
+    "Name": "Assault Rifle",
+    "Description": "Fully Automatic, flexible assault rifle capable of handling all types of combat scenarios.",
+    "Icon": "Assault_Rifle.webp",
+
+    "Common": {
+      "Damage": "30",
+      "Reload": "2.75"
+    },
+    "Uncommon": {
+      "Damage": "31",
+      "Reload": "2.625"
+    },
+    "Rare": {
+      "Damage": "33",
+      "Reload": "2.5"
+    },
+    "Epic": {
+      "Damage": "35",
+      "Reload": "2.375"
+    },
+    "Legendary": {
+      "Damage": "36",
+      "Reload": "2.25"
+    },
+
+    "FireRate": "5.5",
+    "MagazineSize": "30",
+
+    "HighestCatDmg": "44",
+    "HighestCatReload": "4.4",
+    "HighestCatFireRate": "13",
+    "HighestCatMagazineSize": "60"
+  }
+]
