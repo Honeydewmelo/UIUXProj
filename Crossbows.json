@@ -1,0 +1,73 @@
+[
+  {
+    "Name": "Assault Rifle",
+    "Description": "Fully Automatic, flexible assault rifle capable of handling all types of combat scenarios.",
+    "Icon": "Assault_Rifle.webp",
+    "Link": "AssaultRifle.html",
+
+    "Common": {
+      "Damage": "30",
+      "Reload": "2.75"
+    },
+    "Uncommon": {
+      "Damage": "31",
+      "Reload": "2.625"
+    },
+    "Rare": {
+      "Damage": "33",
+      "Reload": "2.5"
+    },
+    "Epic": {
+      "Damage": "35",
+      "Reload": "2.375"
+    },
+    "Legendary": {
+      "Damage": "36",
+      "Reload": "2.25"
+    },
+
+    "FireRate": "5.5",
+    "MagazineSize": "30",
+
+    "HighestCatDmg": "44",
+    "HighestCatReload": "4.4",
+    "HighestCatFireRate": "13",
+    "HighestCatMagazineSize": "60"
+  },
+  {
+    "Name": "Infantry Rifle",
+    "Description": "Assault Weapon: Slow firerate, High damage.",
+    "Icon": "Infantry_Rifle.webp",
+    "Link": "InfantryRifle.html",
+
+    "Common": {
+      "Damage": "36",
+      "Reload": "2.53"
+    },
+    "Uncommon": {
+      "Damage": "38",
+      "Reload": "2.42"
+    },
+    "Rare": {
+      "Damage": "40",
+      "Reload": "2.3"
+    },
+    "Epic": {
+      "Damage": "42",
+      "Reload": "2.19"
+    },
+    "Legendary": {
+      "Damage": "44",
+      "Reload": "2.07"
+    },
+
+    "FireRate": "4",
+    "MagazineSize": "8",
+    "MagazineSizeEX": "10",
+
+    "HighestCatDmg": "44",
+    "HighestCatReload": "4.4",
+    "HighestCatFireRate": "13",
+    "HighestCatMagazineSize": "60"
+  }
+]

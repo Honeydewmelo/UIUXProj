@@ -1,7 +1,7 @@
 const weaponCardTemplate = document.querySelector("[weapon-card-template]");
-const dataContainer = document.querySelector("[data-container]");
+const dataContainer = document.querySelector("[data-crossbows]");
 
-fetch('./AllWeap.json')
+fetch('./Crossbows.json')
     .then(res => res.json())
     .then(data => {
         data.forEach(weapon => {
