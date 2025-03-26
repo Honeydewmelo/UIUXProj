@@ -32,5 +32,40 @@
     "HighestCatReload": "4.4",
     "HighestCatFireRate": "13",
     "HighestCatMagazineSize": "60"
+  },
+  {
+    "Name": "Infantry Rifle",
+    "Description": "Assault Weapon: Slow firerate, High damage.",
+    "Icon": "Infantry_Rifle.webp",
+
+    "Common": {
+      "Damage": "36",
+      "Reload": "2.53"
+    },
+    "Uncommon": {
+      "Damage": "38",
+      "Reload": "2.42"
+    },
+    "Rare": {
+      "Damage": "40",
+      "Reload": "2.3"
+    },
+    "Epic": {
+      "Damage": "42",
+      "Reload": "2.19"
+    },
+    "Legendary": {
+      "Damage": "44",
+      "Reload": "2.07"
+    },
+
+    "FireRate": "4",
+    "MagazineSize": "8",
+    "MagazineSizeEX": "10",
+
+    "HighestCatDmg": "44",
+    "HighestCatReload": "4.4",
+    "HighestCatFireRate": "13",
+    "HighestCatMagazineSize": "60"
   }
 ]

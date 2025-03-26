@@ -37,6 +37,9 @@ fetch('./AllWeap.json')
             const magSize = weapons.querySelector("[data-MagSize]");
             const magSizeDiv = weapons.querySelector("[data-magSizeDiv]");
 
+            const EXMagSize = weapons.querySelector("[data-EXMagSize]");
+            const EXMagSizeDiv = weapons.querySelector("[data-EXMagSizeDiv]");
+
             icon.src = weapon.Icon;
             name.innerText = weapon.Name;
             description.innerText = weapon.Description;
@@ -68,7 +71,12 @@ fetch('./AllWeap.json')
             fireRateDiv.style.width = ((weapon.FireRate / weapon.HighestCatFireRate)*100) + "%";
 
             magSize.innerText = weapon.MagazineSize;
-            magSizeDiv.style.width = ((weapon.MagazineSize / weapon.HighestCatMagazineSize)*100) + "%";
+            magSizeDiv.style.width = ((weapon.MagazineSize / weapon.HighestCatMagazineSize) * 100) + "%";
+
+            EXMagSize.innerText = "/" + weapon.MagazineSizeEX;
+            EXMagSizeDiv.style.width = (((weapon.MagazineSizeEX - MagazineSize) / weapon.HighestCatMagazineSize) * 100) + "%";
+
+            
 
             dataContainer.append(weapons);
         })
