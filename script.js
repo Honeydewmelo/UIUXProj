@@ -73,9 +73,10 @@ fetch('./AllWeap.json')
             magSize.innerText = weapon.MagazineSize;
             magSizeDiv.style.width = ((weapon.MagazineSize / weapon.HighestCatMagazineSize) * 100) + "%";
 
+            if (weapon.MagazineSizeEX != null) {
             EXMagSize.innerText = "/" + weapon.MagazineSizeEX;
             EXMagSizeDiv.style.width = (((weapon.MagazineSizeEX - weapon.MagazineSize) / weapon.HighestCatMagazineSize) * 100) + "%";
-
+            }
             
 
             dataContainer.append(weapons);
