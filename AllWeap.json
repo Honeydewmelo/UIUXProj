@@ -3,6 +3,7 @@
     "Name": "Assault Rifle",
     "Description": "Fully Automatic, flexible assault rifle capable of handling all types of combat scenarios.",
     "Icon": "Assault_Rifle.webp",
+    "Link": "AssaultRifle.html",
 
     "Common": {
       "Damage": "30",
@@ -37,6 +38,7 @@
     "Name": "Infantry Rifle",
     "Description": "Assault Weapon: Slow firerate, High damage.",
     "Icon": "Infantry_Rifle.webp",
+    "Link": "InfantryRifle.html",
 
     "Common": {
       "Damage": "36",

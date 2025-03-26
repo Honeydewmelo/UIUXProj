@@ -5,7 +5,7 @@ fetch('./AllWeap.json')
     .then(res => res.json())
     .then(data => {
         data.forEach(weapon => {
-            const weapons = weaponCardTemplate.content.cloneNode(true).children[0];
+            const weapons = weaponCardTemplate.content.cloneNode(true);
             const icon = weapons.querySelector("[data-icon]");
             const name = weapons.querySelector("[data-name]");
             const description = weapons.querySelector("[data-description]");
@@ -40,9 +40,12 @@ fetch('./AllWeap.json')
             const EXMagSize = weapons.querySelector("[data-EXMagSize]");
             const EXMagSizeDiv = weapons.querySelector("[data-EXMagSizeDiv]");
 
+            const link = weapons.querySelector("[data-link]");
+
             icon.src = weapon.Icon;
             name.innerText = weapon.Name;
             description.innerText = weapon.Description;
+            link.href = weapon.Link;
             comDmg.innerText = weapon.Common.Damage;
             uncDmg.innerText = weapon.Uncommon.Damage;
             rarDmg.innerText = weapon.Rare.Damage;

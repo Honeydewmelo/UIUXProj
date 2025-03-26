@@ -4,23 +4,31 @@
     <head> 
         <meta charset="utf-8"/> 
         <title>UFWW</title>         
+        <link rel="icon" type="image/x-icon" href="favicon.ico"/>
         <link rel="stylesheet" href="style.css"/> 
+        
     </head>     
     <body>
 
         <div id="headerBar">
             <div>
-                <h5> &nbsp;&nbsp;&nbsp; Ultimate Fortnite <br /> &nbsp;&nbsp;&nbsp; Weapon Wiki</h5>
+                <a href="index.html" style="text-decoration:none; color:black;">
+                    <h5> &nbsp;&nbsp;&nbsp; Ultimate Fortnite <br /> &nbsp;&nbsp;&nbsp; Weapon Wiki</h5>
+                </a>
             </div>
 
         </div>
         <div id="sideBar">
             <ul style="list-style-type: none; margin:0; padding:0;">
                 <li>
+                    <a href="index.html" id="selectedTab">
                     <div id="selectedTab">Home</div>
+                    </a>
                 </li>
                 <li>
-                    <div id="otherTab">All Weapons <span style="text-align: right; font-size: 60%;">▶</span></div>
+                    <a href="AllWeapons.html" id="otherTab">
+                        <div id="otherTab">All Weapons <span style="text-align: right; font-size: 60%;">▶</span></div>
+                    </a>
                     <ul>
 
                         <li>
@@ -55,16 +63,17 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <div id="otherTab">All Items <span style="text-align: right; font-size: 60%;">▶</span></div>
+                <li><a href="AllItems.html" id="otherTab">
+                    <div id="otherTab">All Items <span style="text-align: right; font-size: 60%;">▶</span></div> </a>
                     <ul>
                         <li><a href="Utility_Items.html">Utility Items</a></li>
                         <li><a href="Ranged_Consumables.html">Ranged Consumables</a></li>
                         <li><a href="Consumables.html">Consumables</a></li>
                     </ul>
                 </li>
-                <li>
-                    <div id="otherTab">Help</div>
+                <li><a href="Help.html" id="otherTab">
+                        <div id="otherTab">Help</div>
+                    </a>
                 </li>
 
             </ul>
@@ -73,76 +82,93 @@
 
         <div id="main" data-container>
             <hr />
-
+            <div style="display: block; margin: auto; width:50%; text-align:center;">
+                <h1 style="font-size:50px;">Ultimate Fortnite <br />Weapon Wiki</h1>
+                <p style="font-size:20px; color:grey;">The best place to research the items of Fortnite: Battle Royale</p>
+                <a href="AllWeapons.html"><div id="button">Search all Weapons Now</div></a>
+            </div>
+            <div style="display:block; margin:auto; width:50%; text-align:center; margin-top:250px;">
+                <h1 style="font-size:50px;">All the Stats you Need at a Glance</h1>
+                <p style="font-size:20px;">Our site is a simplistic wiki where you can see all of the important information about a weapon/item at a glance with more detailed information just a click away! Our simple layout is based off of the in-game menu while compressing all 5 rarities into one convenient package.</p>
+            </div>
             
         </div>
         <template weapon-card-template>
-            <div id="weapBlock">
-                <image src="Assault_Rifle.webp" width="150" height="150" style="margin:10px; background-color:cornflowerblue;" alt="Weapon Icon" data-icon></image>
-                <div id="description">
-                    <font color="white"><h1 data-name>Assault Rifle</h1> <p data-description>Fully Automatic, flexible assault rifle capable of handling all types of combat scenarios.</p></font>
-                </div>
+            <a href="Assault_Rifle.html" data-link>
+                <div id="weapBlock">
+                    <image src="Assault_Rifle.webp" width="150" height="150" style="margin:10px; background-color:cornflowerblue;" alt="Weapon Icon" data-icon></image>
+                    <div id="description">
+                        <font color="white"><h1 data-name>Assault Rifle</h1> <p data-description>Fully Automatic, flexible assault rifle capable of handling all types of combat scenarios.</p></font>
+                    </div>
 
-                <div style="width:180px">
-                    <div id="statBlock">
-                        <font style="color:white"> &nbspDamage: <br>&nbsp;<font color="gray" data-comDmg>30</font>/<font color="green" data-uncDmg>31</font>/<font color="blue" data-rarDmg>33</font>/<font color="rebeccapurple" data-epiDmg>35</font>/<font color="gold" data-legDmg>36</font></font>
-                        <div id="statTotals">
-                            <div id="commonDmg" class="statDivs" style="background-color: gray; width: 68.2%;" data-comDmgDiv>
+                    <div style="width:180px">
+                        <div id="statBlock">
+                            <font style="color:white"> &nbspDamage: <br>&nbsp;<font color="gray" data-comDmg>30</font>/<font color="green" data-uncDmg>31</font>/<font color="blue" data-rarDmg>33</font>/<font color="rebeccapurple" data-epiDmg>35</font>/<font color="gold" data-legDmg>36</font></font>
+                            <div id="statTotals">
+                                <div id="commonDmg" class="statDivs" style="background-color: gray; width: 68.2%;" data-comDmgDiv>
+                                </div>
+                                <div id="uncommonDmg" class="statDivs" style="background-color: green; width: 2%; " data-uncDmgDiv>
+                                </div>
+                                <div id="rareDmg" class="statDivs" style="background-color: blue; width: 4.5%;" data-rarDmgDiv>
+                                </div>
+                                <div id="epicDmg" class="statDivs" style="background-color: rebeccapurple; width: 4.5%;" data-epiDmgDiv>
+                                </div>
+                                <div id="legDmg" class="statDivs" style="background-color: gold; width: 2%; " data-legDmgDiv>
+                                </div>
                             </div>
-                            <div id="uncommonDmg" class="statDivs" style="background-color: green; width: 2%; " data-uncDmgDiv>
+                        </div>
+                    </div>
+                    <div style="width:180px">
+                        <div id="statBlock">
+                            <font style="color:white"> &nbspReload Speed: <br>&nbsp;<font color="gray" data-comRel>2.75</font>/<font color="green" data-uncRel>2.625</font>/<font color="blue" data-rarRel>2.5</font>/<font color="rebeccapurple" data-epiRel>2.375</font>/<font color="gold" data-legRel>2.25</font></font>
+                            <div id="statTotals">
+                                <div id="legDmg" class="statDivs" style="background-color: gold; width: 51.1%; " data-comRelDiv>
+                                </div>
+                                <div id="epicDmg" class="statDivs" style="background-color: rebeccapurple; width: 2.8%; " data-uncRelDiv>
+                                </div>
+                                <div id="rareDmg" class="statDivs" style="background-color: blue; width: 2.8%;" data-rarRelDiv>
+                                </div>
+                                <div id="uncommonDmg" class="statDivs" style="background-color: green; width: 2.8%; " data-epiRelDiv>
+                                </div>
+                                <div id="commonDmg" class="statDivs" style="background-color: gray; width: 2.8%;" data-legRelDiv>
+                                </div>
                             </div>
-                            <div id="rareDmg" class="statDivs" style="background-color: blue; width: 4.5%;" data-rarDmgDiv>
+                        </div>
+                    </div>
+                    <div style="width:180px">
+                        <div id="statBlock">
+                            <font style="color:white"> &nbspFire Rate: <font data-fireRate>5.5</font></font>
+                            <div id="statTotals">
+                                <div id="commonDmg" class="statDivs" style="background-color: gray; width: 42%;" data-fireRateDiv>
+                                </div>
                             </div>
-                            <div id="epicDmg" class="statDivs" style="background-color: rebeccapurple; width: 4.5%;" data-epiDmgDiv>
-                            </div>
-                            <div id="legDmg" class="statDivs" style="background-color: gold; width: 2%; " data-legDmgDiv>
+                        </div>
+                    </div>
+                    <div style="width:180px">
+                        <div id="statBlock">
+                            <font style="color:white"> &nbspMagazine Size: <font data-MagSize>30</font><font data-EXMagSize style="color:rebeccapurple"></font></font>
+                            <div id="statTotals">
+                                <div id="commonDmg" class="statDivs" style="background-color: gray; width: 30%;" data-magSizeDiv>
+                                </div>
+                                <div id="epicDmg" class="statDivs" style="background-color: rebeccapurple; width: 0%; " data-EXMagSizeDiv>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div style="width:180px">
-                    <div id="statBlock">
-                        <font style="color:white"> &nbspReload Speed: <br>&nbsp;<font color="gray" data-comRel>2.75</font>/<font color="green" data-uncRel>2.625</font>/<font color="blue" data-rarRel>2.5</font>/<font color="rebeccapurple" data-epiRel>2.375</font>/<font color="gold" data-legRel>2.25</font></font>
-                        <div id="statTotals">
-                            <div id="legDmg" class="statDivs" style="background-color: gold; width: 51.1%; " data-comRelDiv>
-                            </div>
-                            <div id="epicDmg" class="statDivs" style="background-color: rebeccapurple; width: 2.8%; " data-uncRelDiv>
-                            </div>
-                            <div id="rareDmg" class="statDivs" style="background-color: blue; width: 2.8%;" data-rarRelDiv>
-                            </div>
-                            <div id="uncommonDmg" class="statDivs" style="background-color: green; width: 2.8%; " data-epiRelDiv>
-                            </div>
-                            <div id="commonDmg" class="statDivs" style="background-color: gray; width: 2.8%;" data-legRelDiv>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="width:180px">
-                    <div id="statBlock">
-                        <font style="color:white"> &nbspFire Rate: <font data-fireRate>5.5</font></font>
-                        <div id="statTotals">
-                            <div id="commonDmg" class="statDivs" style="background-color: gray; width: 42%;" data-fireRateDiv>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="width:180px">
-                    <div id="statBlock">
-                        <font style="color:white"> &nbspMagazine Size: <font data-MagSize>30</font><font data-EXMagSize></font></font>
-                        <div id="statTotals">
-                            <div id="commonDmg" class="statDivs" style="background-color: gray; width: 30%;" data-magSizeDiv>
-                            </div>
-                            <div id="epicDmg" class="statDivs" style="background-color: rebeccapurple; width: 0%; " data-EXMagSizeDiv>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </a>
 
         </template>
-        <script src="script.js"></script>
+        <script src="script.j"></script>
 
-
+        <footer>
+            <div id="footerBar">
+                <div>
+                    <a href="#headerBar"><h6 style="text-align:center">Return to top of Page</h6></a>
+                    <h5> &nbsp;&nbsp;&nbsp; Ultimate Fortnite <br /> &nbsp;&nbsp;&nbsp; Weapon Wiki</h5>
+                </div>
+            </div>
+        </footer>
 
     </body>     
 </html>
