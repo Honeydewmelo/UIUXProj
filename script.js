@@ -74,7 +74,7 @@ fetch('./AllWeap.json')
             magSizeDiv.style.width = ((weapon.MagazineSize / weapon.HighestCatMagazineSize) * 100) + "%";
 
             EXMagSize.innerText = "/" + weapon.MagazineSizeEX;
-            EXMagSizeDiv.style.width = (((weapon.MagazineSizeEX - MagazineSize) / weapon.HighestCatMagazineSize) * 100) + "%";
+            EXMagSizeDiv.style.width = (((weapon.MagazineSizeEX - weapon.MagazineSize) / weapon.HighestCatMagazineSize) * 100) + "%";
 
             
 
