@@ -29,7 +29,7 @@ fetch('./AssaultRifles.json')
     fetch('./Pistols.json')
         .then(res => res.json())
         .then(data => {
-        makeCardTemplate(data, document.querySelector("[data-pistols]");
+        makeCardTemplate(data, document.querySelector("[data-pistols]"));
         }
     )
 
