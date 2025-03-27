@@ -1,4 +1,15 @@
 var weaponCardTemplate = document.querySelector("[weapon-card-template]");
+const searchInput = document.querySelector("[data-search]");
+
+let weaponArray = [];
+
+
+searchInput.addEventListener("input", e => {
+    const value = e.target.value;
+    weaponArray.forEach(weapon => {
+        const isVisible = weapon.name.toLowerCase().includes(value.toLowerCase());
+    weapon.element.classList.toggle("hide", !isVisible);
+})
 
 
 fetch('./AssaultRifles.json')
@@ -73,7 +84,7 @@ fetch('./AssaultRifles.json')
     
 
 function makeCardTemplate(data, dataContainer){
-    data.forEach(weapon => {
+    weaponArray = data.map(weapon => {
         var weapons = weaponCardTemplate.content.cloneNode(true);
         var icon = weapons.querySelector("[data-icon]");
         var name = weapons.querySelector("[data-name]");
@@ -150,7 +161,7 @@ function makeCardTemplate(data, dataContainer){
             EXMagSizeDiv.style.width = (((weapon.MagazineSizeEX - weapon.MagazineSize) / weapon.HighestCatMagazineSize) * 100) + "%";
         }
 
-
         dataContainer.append(weapons);
+        return { name: weapon.name, element:weaponCardTemplate}
     });
 }
