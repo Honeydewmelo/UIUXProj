@@ -2,13 +2,15 @@ var weaponCardTemplate = document.querySelector("[weapon-card-template]");
 const searchInput = document.querySelector("[data-search]");
 
 let weaponArray = [];
+let tempWeaponArray = [];
 
 
 searchInput.addEventListener("input", e => {
-    const value = e.target.value;
+    const value = e.target.value.toLowerCase();
     weaponArray.forEach(weapon => {
-        const isVisible = weapon.name.toLowerCase().includes(value.toLowerCase());
+        const isVisible = weapon.name.toLowerCase().includes(value);
         weapon.element.classList.toggle("hide", !isVisible);
+        console.log(weapon)
     })
 })
 
@@ -17,17 +19,20 @@ searchInput.addEventListener("input", e => {
         .then(res => res.json())
         .then(data => {
             makeCardTemplate(data, document.querySelector("[data-assaultRifles]"));
+            weaponArray = weaponArray.concat(tempWeaponArray);
         })
     fetch('./Shotguns.json')
         .then(res => res.json())
         .then(data => {
             makeCardTemplate(data, document.querySelector("[data-shotguns]"));
+            weaponArray = weaponArray.concat(tempWeaponArray);
         }
         )
     fetch('./SMGs.json')
         .then(res => res.json())
         .then(data => {
             makeCardTemplate(data, document.querySelector("[data-smgs]"));
+            weaponArray = weaponArray.concat(tempWeaponArray);
         }
 
         )
@@ -35,6 +40,7 @@ searchInput.addEventListener("input", e => {
         .then(res => res.json())
         .then(data => {
             makeCardTemplate(data, document.querySelector("[data-sniperRifles]"));
+            weaponArray = weaponArray.concat(tempWeaponArray);
         }
         )
 
@@ -42,6 +48,7 @@ searchInput.addEventListener("input", e => {
         .then(res => res.json())
         .then(data => {
             makeCardTemplate(data, document.querySelector("[data-pistols]"));
+            weaponArray = weaponArray.concat(tempWeaponArray);
         }
         )
 
@@ -49,6 +56,7 @@ searchInput.addEventListener("input", e => {
         .then(res => res.json())
         .then(data => {
             makeCardTemplate(data, document.querySelector("[data-bows]"));
+            weaponArray = weaponArray.concat(tempWeaponArray);
         }
         )
 
@@ -56,6 +64,7 @@ searchInput.addEventListener("input", e => {
         .then(res => res.json())
         .then(data => {
             makeCardTemplate(data, document.querySelector("[data-explosiveWeapons]"));
+            weaponArray = weaponArray.concat(tempWeaponArray);
         }
         )
 
@@ -63,6 +72,7 @@ searchInput.addEventListener("input", e => {
         .then(res => res.json())
         .then(data => {
             makeCardTemplate(data, document.querySelector("[data-meleeWeapons]"));
+            weaponArray = weaponArray.concat(tempWeaponArray);
         }
         )
 
@@ -70,6 +80,7 @@ searchInput.addEventListener("input", e => {
         .then(res => res.json())
         .then(data => {
             makeCardTemplate(data, document.querySelector("[data-marksmanRifles]"));
+            weaponArray = weaponArray.concat(tempWeaponArray);
         }
 
         )
@@ -77,6 +88,7 @@ searchInput.addEventListener("input", e => {
         .then(res => res.json())
         .then(data => {
             makeCardTemplate(data, document.querySelector("[data-crossbows]"));
+            weaponArray = weaponArray.concat(tempWeaponArray);
         }
 
         )
@@ -85,8 +97,8 @@ searchInput.addEventListener("input", e => {
 
 
     function makeCardTemplate(data, dataContainer) {
-        weaponArray = data.map(weapon => {
-            var weapons = weaponCardTemplate.content.cloneNode(true);
+        tempWeaponArray = data.map(weapon => {
+            var weapons = weaponCardTemplate.content.cloneNode(true).children[0];
             var icon = weapons.querySelector("[data-icon]");
             var name = weapons.querySelector("[data-name]");
             var description = weapons.querySelector("[data-description]");
@@ -163,6 +175,6 @@ searchInput.addEventListener("input", e => {
             }
 
             dataContainer.append(weapons);
-            return { name: weapon.Name, element: weaponCardTemplate }
+            return { name: weapon.Name, element: weapons }
         });
     }

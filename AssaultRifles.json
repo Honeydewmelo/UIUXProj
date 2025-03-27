@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Assault Rifle",
+    "Name": "aAssault Rifle",
     "Description": "Fully Automatic, flexible assault rifle capable of handling all types of combat scenarios.",
     "Icon": "Assault_Rifle.webp",
     "Link": "AssaultRifle.html",

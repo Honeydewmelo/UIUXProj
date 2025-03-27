@@ -24,7 +24,7 @@ body {
     padding-bottom: 260px;
 }
 
-#weapBlock {
+.weapBlock {
     padding:15px;
     background-color: rgb(19, 31, 85);
     width: 400px;
