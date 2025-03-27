@@ -7,7 +7,7 @@ let weaponArray = [];
 searchInput.addEventListener("input", e => {
     const value = e.target.value;
     weaponArray.forEach(weapon => {
-        const isVisible = weapon.name.toLowerCase().includes(value.toLowerCase());
+        const isVisible = weapon.Name.toLowerCase().includes(value.toLowerCase());
         weapon.element.classList.toggle("hide", !isVisible);
     })
 })
