@@ -163,6 +163,6 @@ searchInput.addEventListener("input", e => {
             }
 
             dataContainer.append(weapons);
-            return { name: weapon.name, element: weaponCardTemplate }
+            return { name: weapon.Name, element: weaponCardTemplate }
         });
     }
