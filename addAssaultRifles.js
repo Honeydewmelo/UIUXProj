@@ -43,7 +43,7 @@ fetch('./AssaultRifles.json')
     fetch('./ExplosiveWeapons.json')
         .then(res => res.json())
         .then(data => {
-            makeCardTemplate(data, document.querySelector("[data-explosiveWeapons]");
+            makeCardTemplate(data, document.querySelector("[data-explosiveWeapons]"));
         }
     )
 
