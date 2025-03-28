@@ -1,7 +1,7 @@
 [
   {
-    "Name": "Assault aRifle",
-    "Description": "Fully Automatic, flexible assault rifle capable of handling all types of combat scenarios.",
+    "Name": "Placeholder",
+    "Description": "Placeholder Description Text",
     "Icon": "Assault_Rifle.webp",
     "Link": "AssaultRifle.html",
 
@@ -35,8 +35,8 @@
     "HighestCatMagazineSize": "60"
   },
   {
-    "Name": "Infantry Rifle",
-    "Description": "Assault Weapon: Slow firerate, High damage.",
+    "Name": "Placeholder",
+    "Description": "Placeholder Description Text",
     "Icon": "Infantry_Rifle.webp",
     "Link": "InfantryRifle.html",
 

@@ -170,3 +170,33 @@ li a:hover {
 .hide{
     display:none;
 }
+#table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px;
+
+}
+#common {
+    color: gray;
+    -webkit-text-stroke: 0.5px gray;
+}
+#uncommon{
+    color: green;
+    -webkit-text-stroke: 0.5px gray;
+}
+#rare{
+    color: blue;
+    -webkit-text-stroke: 0.5px gray;
+}
+#epic{
+    color: rebeccapurple;
+    -webkit-text-stroke: 0.5px gray;
+}
+#legendary{
+    color: gold;
+    -webkit-text-stroke: 0.5px gray;
+}
+#mythic{
+    color: yellow;
+    -webkit-text-stroke: 0.5px gray;
+}
