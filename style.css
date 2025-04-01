@@ -40,6 +40,10 @@ body {
     border-radius: 12px;
 }
 
+#weapBlock:hover {
+    background-color: #d5ffb8;
+}
+
 #statTotals {
     display: flex;
     width: 175px;
