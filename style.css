@@ -26,16 +26,18 @@ body {
 }
 
 .weapBlock {
-    padding:15px;
-    background-color: rgb(19, 31, 85);
+    padding: 15px;
+    background-color: white;
     width: 400px;
     height: 250px;
     display: grid;
     overflow: auto;
     grid-template-columns: 0fr 1fr;
     grid-template-rows: 164px;
-    margin:15px;
-    float:left;
+    margin: 15px;
+    float: left;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+    border-radius: 12px;
 }
 
 #statTotals {
