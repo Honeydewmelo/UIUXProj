@@ -43,6 +43,10 @@ body {
 #weapblocklink:hover {
     background-color: #d5ffb8;
 }
+#weapblocklink{
+        text-decoration: none;
+
+}
 
 #statTotals {
     display: flex;
