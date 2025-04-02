@@ -9,13 +9,14 @@ body {
 }
 
 #sideBar {
-    position:relative;
+    position: relative;
     background-color: white;
     float: left;
     width: 204px;
     height: 525px;
     margin-right: 15px;
-    box-shadow:3px 3px 10px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+    font-weight: bold;
 }
 
 #main{
@@ -190,24 +191,30 @@ li a:hover {
 #common {
     color: gray;
     -webkit-text-stroke: 0.5px gray;
+    font-weight:bold;
 }
-#uncommon{
+#uncommon {
     color: green;
     -webkit-text-stroke: 0.5px gray;
+    font-weight: bold;
 }
 #rare{
     color: blue;
     -webkit-text-stroke: 0.5px gray;
+    font-weight: bold;
 }
 #epic{
     color: rebeccapurple;
     -webkit-text-stroke: 0.5px gray;
+    font-weight: bold;
 }
-#legendary{
+#legendary {
     color: gold;
     -webkit-text-stroke: 0.5px gray;
+    font-weight: bold;
 }
-#mythic{
+#mythic {
     color: yellow;
     -webkit-text-stroke: 0.5px gray;
+    font-weight: bold;
 }
