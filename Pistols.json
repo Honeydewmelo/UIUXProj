@@ -69,5 +69,41 @@
     "HighestCatReload": "4.4",
     "HighestCatFireRate": "13",
     "HighestCatMagazineSize": "60"
+  },
+  {
+    "Name": "Lock On Pistol",
+    "Description": "Specialized pistol that locks onto and tracks a target. Exceptionally useful during high speed pursuits.",
+    "Icon": "Lock_On_Pistol.webp",
+    "Link": "Lock_On_Pistol.html",
+
+    "Common": {
+      "Damage": "",
+      "Reload": ""
+    },
+    "Uncommon": {
+      "Damage": "",
+      "Reload": ""
+    },
+    "Rare": {
+      "Damage": "25",
+      "Reload": "1.76"
+    },
+    "Epic": {
+      "Damage": "",
+      "Reload": ""
+    },
+    "Legendary": {
+      "Damage": "",
+      "Reload": ""
+    },
+
+    "FireRate": "15",
+    "MagazineSize": "12",
+    "MagazineSizeEX": "",
+
+    "HighestCatDmg": "109",
+    "HighestCatReload": "3.3",
+    "HighestCatFireRate": "15",
+    "HighestCatMagazineSize": "18"
   }
 ]
