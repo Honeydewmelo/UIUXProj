@@ -112,6 +112,10 @@ body {
 
 }
 
+#weapImg {
+    margin:10px; 
+    background-color:cornflowerblue;
+}
 
 #button{
     background-color: black;
@@ -183,7 +187,7 @@ li a:hover {
     display:none;
 }
 #table{
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
     margin: 0px;
 
