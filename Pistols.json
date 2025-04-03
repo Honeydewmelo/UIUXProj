@@ -76,26 +76,14 @@
     "Icon": "Lock_On_Pistol.webp",
     "Link": "Lock_On_Pistol.html",
 
-    "Common": {
-      "Damage": "",
-      "Reload": ""
-    },
-    "Uncommon": {
-      "Damage": "",
-      "Reload": ""
-    },
+
+
     "Rare": {
       "Damage": "25",
       "Reload": "1.76"
     },
-    "Epic": {
-      "Damage": "",
-      "Reload": ""
-    },
-    "Legendary": {
-      "Damage": "",
-      "Reload": ""
-    },
+
+
 
     "FireRate": "15",
     "MagazineSize": "12",
