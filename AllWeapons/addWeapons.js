@@ -139,29 +139,74 @@ searchInput.addEventListener("input", e => {
             name.innerText = weapon.Name;
             description.innerText = weapon.Description;
             link.href = weapon.Link;
-            comDmg.innerText = weapon.Common.Damage;
-            uncDmg.innerText = weapon.Uncommon.Damage;
-            rarDmg.innerText = weapon.Rare.Damage;
-            epiDmg.innerText = weapon.Epic.Damage;
-            legDmg.innerText = weapon.Legendary.Damage;
 
-            comDmgDiv.style.width = ((weapon.Common.Damage / weapon.HighestCatDmg) * 100) + "%";
-            uncDmgDiv.style.width = (((weapon.Uncommon.Damage - weapon.Common.Damage) / weapon.HighestCatDmg) * 100) + "%";
-            rarDmgDiv.style.width = (((weapon.Rare.Damage - weapon.Uncommon.Damage) / weapon.HighestCatDmg) * 100) + "%";
-            epiDmgDiv.style.width = (((weapon.Epic.Damage - weapon.Rare.Damage) / weapon.HighestCatDmg) * 100) + "%";
-            legDmgDiv.style.width = (((weapon.Legendary.Damage - weapon.Epic.Damage) / weapon.HighestCatDmg) * 100) + "%";
+            if (weapon.Common.Damage != null) {
+                comDmgDiv.style.width = ((weapon.Common.Damage / weapon.HighestCatDmg) * 100) + "%";
+                comRelDiv.style.width = (((weapon.Common.Reload - weapon.Uncommon.Reload) / weapon.HighestCatRel) * 100) + "%";
+                comRel.innerText = weapon.Common.Reload;
+                comDmg.innerText = weapon.Common.Damage;
+            }
+            else {
+                comDmgDiv.style.width = "0%";
+            }
+            if (weapon.Uncommon.Damage != null) {
+                if (weapon.Common.Damage != null) {
+                    uncDmgDiv.style.width = (((weapon.Uncommon.Damage - weapon.Common.Damage) / weapon.HighestCatDmg) * 100) + "%";
+                    uncRelDiv.style.width = (((weapon.Uncommon.Reload - weapon.Rare.Reload) / weapon.HighestCatRel) * 100) + "%";
+                } else {
+                    uncDmgDiv.style.width = ((weapon.Uncommon.Damage / weapon.HighestCatDmg) * 100) + "%";
+                    uncRelDiv.style.width = ((weapon.Uncommon.Reload / weapon.HighestCatRel) * 100) + "%";
+                }
+                uncRel.innerText = weapon.Uncommon.Reload;
+                uncDmg.innerText = weapon.Uncommon.Damage;
+            }
+            else {
+                wncDmgDiv.style.width = "0%";
+            }
+            if (weapon.Rare.Damage != null) {
+                if (weapon.Uncommon.Damage != null) {
+                    rarDmgDiv.style.width = (((weapon.Rare.Damage - weapon.Uncommon.Damage) / weapon.HighestCatDmg) * 100) + "%";
+                    rarRelDiv.style.width = (((weapon.Rare.Reload - weapon.Epic.Reload) / weapon.HighestCatRel) * 100) + "%";
+                } else {
+                    rarDmgDiv.style.width = ((weapon.Rare.Damage / weapon.HighestCatDmg) * 100) + "%";
+                    rarRelDiv.style.width = ((weapon.Rare.Reload / weapon.HighestCatRel) * 100) + "%";
+                }
+                rarRel.innerText = weapon.Rare.Reload;
+                rarDmg.innerText = weapon.Rare.Damage;
+            }
+            else {
+                rarDmgDiv.style.width = "0%";
+            }
+            if (weapon.Epic.Damage != null) {
+                if (weapon.Rare.Damage != null) {
+                    epiDmgDiv.style.width = (((weapon.Epic.Damage - weapon.Rare.Damage) / weapon.HighestCatDmg) * 100) + "%";
+                    epiRelDiv.style.width = (((weapon.Epic.Reload - weapon.Legendary.Reload) / weapon.HighestCatRel) * 100) + "%";
+                } else {
+                    epiDmgDiv.style.width = ((weapon.Epic.Damage / weapon.HighestCatDmg) * 100) + "%";
+                    epiRelDiv.style.width = ((weapon.Epic.Reload / weapon.HighestCatRel) * 100) + "%";
+                }
 
-            comRel.innerText = weapon.Common.Reload;
-            uncRel.innerText = weapon.Uncommon.Reload;
-            rarRel.innerText = weapon.Rare.Reload;
-            epiRel.innerText = weapon.Epic.Reload;
-            legRel.innerText = weapon.Legendary.Reload;
+                epiRel.innerText = weapon.Epic.Reload;
+                epiDmg.innerText = weapon.Epic.Damage;
+            }
+            else {
+                epiDmgDiv.style.width = "0%";
+            }
+            if (weapon.Legendary.Damage != null) {
+                if (weapon.Epic.Damage != null) {
+                    legDmgDiv.style.width = (((weapon.Legendary.Damage - weapon.Epic.Damage) / weapon.HighestCatDmg) * 100) + "%";
+                    legRelDiv.style.width = (((weapon.Legendary.Reload) / weapon.HighestCatRel) * 100) + "%";
+                } else {
+                    legDmgDiv.style.width = ((weapon.Legendary.Damage / weapon.HighestCatDmg) * 100) + "%";
+                    legRelDiv.style.width = ((weapon.Legendary.Reload / weapon.HighestCatRel) * 100) + "%";
+                }
 
-            legRelDiv.style.width = ((weapon.Legendary.Reload / weapon.HighestCatRel) * 100) + "%";
-            epiRelDiv.style.width = (((weapon.Epic.Reload - weapon.Legendary.Reload) / weapon.HighestCatRel) * 100) + "%";
-            rarRelDiv.style.width = (((weapon.Rare.Reload - weapon.Epic.Reload) / weapon.HighestCatRel) * 100) + "%";
-            uncRelDiv.style.width = (((weapon.Uncommon.Reload - weapon.Rare.Reload) / weapon.HighestCatRel) * 100) + "%";
-            comRelDiv.style.width = (((weapon.Common.Reload - weapon.Uncommon.Reload) / weapon.HighestCatRel) * 100) + "%";
+                legRel.innerText = weapon.Legendary.Reload;
+                legDmg.innerText = weapon.Legendary.Damage;
+            }
+            else {
+                legDmgDiv.style.width = "0%";
+            }
 
             fireRate.innerText = weapon.FireRate;
             fireRateDiv.style.width = ((weapon.FireRate / weapon.HighestCatFireRate) * 100) + "%";

@@ -58,7 +58,7 @@
     },
     "Legendary": {
       "Damage": "44",
-      "Reload": "2.07"
+      "Reload": "0.1"
     },
 
     "FireRate": "4",
@@ -92,11 +92,13 @@
       "Damage": "",
       "Reload": ""
     },
-
+    "Legendary": {
+      "Damage": "",
+      "Reload": ""
+    },
 
     "FireRate": "15",
     "MagazineSize": "12",
-    "MagazineSizeEX": "",
 
     "HighestCatDmg": "109",
     "HighestCatReload": "3.3",
