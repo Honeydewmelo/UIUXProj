@@ -140,7 +140,7 @@ searchInput.addEventListener("input", e => {
             description.innerText = weapon.Description;
             link.href = weapon.Link;
 
-            if (weapon.Common.Damage != null) {
+            if (weapon.Common != null) {
                 comDmgDiv.style.width = ((weapon.Common.Damage / weapon.HighestCatDmg) * 100) + "%";
 
                 comDmg.innerText = weapon.Common.Damage;
@@ -148,8 +148,8 @@ searchInput.addEventListener("input", e => {
             else {
                 comDmgDiv.style.width = "0%";
             }
-            if (weapon.Uncommon.Damage != null) {
-                if (weapon.Common.Damage != null) {
+            if (weapon.Uncommon != null) {
+                if (weapon.Common != null) {
                     uncDmgDiv.style.width = (((weapon.Uncommon.Damage - weapon.Common.Damage) / weapon.HighestCatDmg) * 100) + "%";
                 } else {
                     uncDmgDiv.style.width = ((weapon.Uncommon.Damage / weapon.HighestCatDmg) * 100) + "%";
@@ -159,8 +159,8 @@ searchInput.addEventListener("input", e => {
             else {
                 uncDmgDiv.style.width = "0%";
             }
-            if (weapon.Rare.Damage != null) {
-                if (weapon.Uncommon.Damage != null) {
+            if (weapon.Rare != null) {
+                if (weapon.Uncommon != null) {
                     rarDmgDiv.style.width = (((weapon.Rare.Damage - weapon.Uncommon.Damage) / weapon.HighestCatDmg) * 100) + "%";
                 } else {
                     rarDmgDiv.style.width = ((weapon.Rare.Damage / weapon.HighestCatDmg) * 100) + "%";
@@ -170,8 +170,8 @@ searchInput.addEventListener("input", e => {
             else {
                 rarDmgDiv.style.width = "0%";
             }
-            if (weapon.Epic.Damage != null) {
-                if (weapon.Rare.Damage != null) {
+            if (weapon.Epic != null) {
+                if (weapon.Rare != null) {
                     epiDmgDiv.style.width = (((weapon.Epic.Damage - weapon.Rare.Damage) / weapon.HighestCatDmg) * 100) + "%";
                 } else {
                     epiDmgDiv.style.width = ((weapon.Epic.Damage / weapon.HighestCatDmg) * 100) + "%";
@@ -182,8 +182,8 @@ searchInput.addEventListener("input", e => {
             else {
                 epiDmgDiv.style.width = "0%";
             }
-            if (weapon.Legendary.Damage != null) {
-                if (weapon.Epic.Damage != null) {
+            if (weapon.Legendary != null) {
+                if (weapon.Epic != null) {
                     legDmgDiv.style.width = (((weapon.Legendary.Damage - weapon.Epic.Damage) / weapon.HighestCatDmg) * 100) + "%";
                 } else {
                     legDmgDiv.style.width = ((weapon.Legendary.Damage / weapon.HighestCatDmg) * 100) + "%";
@@ -193,14 +193,14 @@ searchInput.addEventListener("input", e => {
             else {
                 legDmgDiv.style.width = "0%";
             }
-            if (weapon.Legendary.Reload != null) {
+            if (weapon.Legendary != null) {
                 legRelDiv.style.width = ((weapon.Legendary.Reload / weapon.HighestCatRel) * 100) + "%";
                 legRel.innerText = weapon.Legendary.Reload;
             }
             else {
                 legRelDiv.style.width = "0%";
             }
-            if (weapon.Epic.Reload != null) {
+            if (weapon.Epic != null) {
                 if (weapon.Legendary.Reload != null) {
                     epiRelDiv.style.width = (((weapon.Epic.Reload - weapon.Legendary.Reload) / weapon.HighestCatRel) * 100) + "%";
                 }
@@ -212,8 +212,8 @@ searchInput.addEventListener("input", e => {
             else {
                 epiRelDiv.style.width = "0%";
             }
-            if (weapon.Rare.Reload != null) {
-                if (weapon.Epic.Reload != null) {
+            if (weapon.Rare != null) {
+                if (weapon.Epic != null) {
                     rarRelDiv.style.width = (((weapon.Rare.Reload - weapon.Epic.Reload) / weapon.HighestCatRel) * 100) + "%";
                 }
                 else {
@@ -224,8 +224,8 @@ searchInput.addEventListener("input", e => {
             else {
                 rarRelDiv.style.width = "0%";
             }
-            if (weapon.Uncommon.Reload != null) {
-                if (weapon.Rare.Reload != null) {
+            if (weapon.Uncommon != null) {
+                if (weapon.Rare != null) {
                     uncRelDiv.style.width = (((weapon.Uncommon.Reload - weapon.Rare.Reload) / weapon.HighestCatRel) * 100) + "%";
                 }
                 else {
@@ -236,8 +236,8 @@ searchInput.addEventListener("input", e => {
             else {
                 uncRelDiv.style.width = "0%";
             }
-            if (weapon.Common.Reload != null) {
-                if (weapon.Uncommon.Reload != null) {
+            if (weapon.Common != null) {
+                if (weapon.Uncommon != null) {
                     comRelDiv.style.width = (((weapon.Common.Reload - weapon.Uncommon.Reload) / weapon.HighestCatRel) * 100) + "%";
                 }
                 else {
