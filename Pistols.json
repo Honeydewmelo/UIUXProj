@@ -3,7 +3,7 @@
     "Name": "Placeholder",
     "Description": "Placeholder Description Text",
     "Icon": "Assault_Rifle.webp",
-    "Link": "AssaultRifle.html",
+    "Link": "DODGERAM.html",
 
     "Common": {
       "Damage": "30",
@@ -38,7 +38,7 @@
     "Name": "Placeholder",
     "Description": "Placeholder Description Text",
     "Icon": "Infantry_Rifle.webp",
-    "Link": "InfantryRifle.html",
+    "Link": "DODGERAM.html",
 
     "Common": {
       "Damage": "36",
