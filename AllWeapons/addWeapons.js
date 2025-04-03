@@ -147,6 +147,7 @@ searchInput.addEventListener("input", e => {
             }
             else {
                 comDmgDiv.style.width = "0%";
+                comDmg.innerText = "";
             }
             if (weapon.Uncommon != null) {
                 if (weapon.Common != null) {
@@ -158,6 +159,7 @@ searchInput.addEventListener("input", e => {
             }
             else {
                 uncDmgDiv.style.width = "0%";
+                uncDmg.innerText = "";
             }
             if (weapon.Rare != null) {
                 if (weapon.Uncommon != null) {
@@ -169,6 +171,7 @@ searchInput.addEventListener("input", e => {
             }
             else {
                 rarDmgDiv.style.width = "0%";
+                rarDmg.innerText = "";
             }
             if (weapon.Epic != null) {
                 if (weapon.Rare != null) {
@@ -181,6 +184,7 @@ searchInput.addEventListener("input", e => {
             }
             else {
                 epiDmgDiv.style.width = "0%";
+                epiDmg.innerText = "";
             }
             if (weapon.Legendary != null) {
                 if (weapon.Epic != null) {
@@ -192,6 +196,7 @@ searchInput.addEventListener("input", e => {
             }
             else {
                 legDmgDiv.style.width = "0%";
+                legDmg.innerText = "";
             }
             if (weapon.Legendary != null) {
                 legRelDiv.style.width = ((weapon.Legendary.Reload / weapon.HighestCatRel) * 100) + "%";
@@ -199,6 +204,7 @@ searchInput.addEventListener("input", e => {
             }
             else {
                 legRelDiv.style.width = "0%";
+                legRel.innerText = "";
             }
             if (weapon.Epic != null) {
                 if (weapon.Legendary.Reload != null) {
@@ -211,6 +217,7 @@ searchInput.addEventListener("input", e => {
             }
             else {
                 epiRelDiv.style.width = "0%";
+                epiRel.innerText = "";
             }
             if (weapon.Rare != null) {
                 if (weapon.Epic != null) {
@@ -223,6 +230,7 @@ searchInput.addEventListener("input", e => {
             }
             else {
                 rarRelDiv.style.width = "0%";
+                rarRel.innerText = "";
             }
             if (weapon.Uncommon != null) {
                 if (weapon.Rare != null) {
@@ -235,6 +243,7 @@ searchInput.addEventListener("input", e => {
             }
             else {
                 uncRelDiv.style.width = "0%";
+                uncRel.innerText = "";
             }
             if (weapon.Common != null) {
                 if (weapon.Uncommon != null) {
@@ -247,6 +256,7 @@ searchInput.addEventListener("input", e => {
             }
             else {
                 comRelDiv.style.width = "0%";
+                comRel.innerText = "";
             }
 
             fireRate.innerText = weapon.FireRate;
