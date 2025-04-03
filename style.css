@@ -23,7 +23,7 @@ body {
     margin:15px;
     background-color:white;
     width:auto;
-    padding-bottom: 260px;
+    padding-bottom: 750px;
 }
 
 .weapBlock {
@@ -115,7 +115,7 @@ body {
 
 #weapImg {
     margin:10px; 
-    background-color:cornflowerblue;
+    background-color:white;
 }
 
 #button{
