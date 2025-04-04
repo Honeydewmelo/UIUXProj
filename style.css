@@ -1,5 +1,13 @@
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+        width: 100%;
+    }
+}
+
 body {
 }
+
 
 #headerBar {
     background-color: white;
@@ -92,7 +100,7 @@ body {
 }
 #weaponList{
     display: block;
-    margin-left:25%;
+    margin-left:220px;
     width:76%;
 }
 #separator{
